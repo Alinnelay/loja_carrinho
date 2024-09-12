@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Projeto </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        <script src="card.js"></script>
+        <style>
+        body{
+          background-color:beige;
+          padding-top: 100px;
+        }
+        :root{
+            --primary: #F9AFA6;
+        }
+        .bg-primary, .btn-primary{
+            background-color: var(--primary) !important;
+            border-color: #F9AFA6;
+        }
+      </style>
+    </head>   
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        
+        <!-- O LINK PARA A TERCEIRA PÁGINA ESTÁ NO CARTÃO COM TÍTULO BLOCO QUADRICULADO-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-primary">
+            <div class="container-fluid">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.PNG" alt="logo" width="150" height="50">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> Ofertas </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Stories </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Sobre </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index1.html"> Materiais escolares </a></li>
+                                <li><a class="dropdown-item" href="#"> Materiais de escritorio </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="ml-1 mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16" style="margin-left: 4; margin-right: 4;">
+                                    <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"/>
+                                    <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11"/>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="search">
+                            <input type="search" name="caixa-buscar" id="busca" placeholder="O que você procura?">
+                        </li>
+                        <li>
+                            <div class="ml-4 mr-2">
+                                <a href="index3.html"> <i class="bi bi-bag-heart" style="width: 16px; height: 16px; margin-left: 4; margin-right: 4;"></i> </a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"> Login <span class="sr-only"> </span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5> Filtros </h5>
+                    <p> Limpar filtros </p>
+                    <p class="text-left"> Categorias </p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
+                        <label class="form-check-label" for="defaultCheck1"> Bloco de nota </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                        <label class="form-check-label" for="defaultCheck2"> Borracha </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                        <label class="form-check-label" for="defaultCheck3"> Caderno </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                        <label class="form-check-label" for="defaultCheck4"> Canetas </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                        <label class="form-check-label" for="defaultCheck4"> Colas </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                        <label class="form-check-label" for="defaultCheck4"> Fita corretiva </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+                        <label class="form-check-label" for="defaultCheck4"> Grampeador </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
+                        <label class="form-check-label" for="defaultCheck4"> Lápis </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
+                        <label class="form-check-label" for="defaultCheck4"> Tesoura </label>
+                    </div>
+                    <p class="text-left"> Cores </p>
+                    <div class="row">
+                        <div class="ml-1 mr-1 mt-1 mb-1" style="border-radius:50%; background-color: lightcoral; cursor:pointer; height: 30px; width: 30px;"></div>
+                        <div class="ml-1 mr-1 mt-1 mb-1" style="border-radius:50%; background-color: lightskyblue; cursor:pointer; height: 30px; width: 30px;"></div>
+                        <div class="ml-1 mr-1 mt-1 mb-1" style="border-radius:50%; background-color:lightgreen; cursor:pointer; height: 30px; width: 30px;"></div>
+                        <div class="ml-1 mr-1 mt-1 mb-1" style="border-radius:50%; background-color: lightpink; cursor:pointer; height: 30px; width: 30px;"></div>
+                        <div class="ml-1 mr-1 mt-1 mb-1" style="border-radius:50%; background-color: lightgoldenrodyellow; cursor:pointer; height: 30px; width: 30px;"></div>
+                    </div>
+                    <div class="row">
+                        <div class="ml-1 mr-1 mt-1 mb-1" style="border-radius:50%; background-color: lightseagreen; cursor:pointer; height: 30px; width: 30px;"></div>
+                        <div class="ml-1 mr-1 mt-1 mb-1" style="border-radius:50%; background-color: lightgrey; cursor:pointer; height: 30px; width: 30px;"></div>
+                        <div class="ml-1 mr-1 mt-1 mb-1" style="border-radius:50%; background-color: lightsalmon; cursor:pointer; height: 30px; width: 30px;"></div>
+                        <div class="ml-1 mr-1 mt-1 mb-1" style="border-radius:50%; background-color: lightslategray; cursor:pointer; height: 30px; width: 30px;"></div>
+                        <div class="ml-1 mr-1 mt-1 mb-1" style="border-radius:50%; background-color: black; cursor:pointer; height: 30px; width: 30px;"></div>
+                    </div>
+                </div>
+                <div class="col-md-8 mb-3">
+                    <div class="row">
+                        <div class="col mr-2">
+                            <div class="card mb-2" style="width: 18rem;">
+                                <a href="index2.html">
+                                   <img src="img/bloquinho.png" class="card-img-top" alt="..."> 
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title"> Bloco quadriculado </h5>
+                                    <p class="card-text fw-bold"> R$ 8,00 </p>
+                                    <p class="card-text"> Bloco de anotações folha ... </p>
+                                    <a href="#" class="btn btn-primary"> Adicionar ao Carrinho </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/Bloco de notas.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Bloco de notas </h5>
+                                    <p class="card-text fw-bold"> R$ 10,00 </p>
+                                    <p class="card-text"> Bloco de notas com enfeites ... </p>
+                                    <a href="#" class="btn btn-primary"> Adicionar ao Carrinho </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mr-2">
+                            <div class="card mb-2" style="width: 18rem;">
+                                <img src="img/Post-it.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Post it </h5>
+                                    <p class="card-text fw-bold"> R$ 4,00 </p>
+                                    <p class="card-text"> Post its coloridos </p>
+                                    <a href="#" class="btn btn-primary"> Adicionar ao Carrinho </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/post-its_color.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Post it </h5>
+                                    <p class="card-text fw-bold"> R$ 6,00 </p>
+                                    <p class="card-text"> Post it estampa de flores </p>
+                                    <a href="#" class="btn btn-primary"> Adicionar ao Carrinho </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-outline-dark text-center mb-3"> Mais Produtos </button>
+            </div> 
+        </div>
+
+        <footer class="border-top text-muted bg-light">
+            <div class="container">
+              <div class="row py-3">
+                <div class="col text-center text-md-left">
+                  &copy; 2023 - Paper Encanto
+                </div>
+                <div class="col text-center text-md-left">
+                  <a href="#" class="text-decoration-none text-dark"> Comprar </a> </br>
+                  <a href="index1.html" class="text-decoration-none text-black-50"> Materiais escolares </a> </br>
+                  <a href="#" class="text-decoration-none text-black-50"> Materiais de escritorio </a> </br>
+                </div>
+                <div class="col text-center text-md-left">
+                  <a href="#" class="text-decoration-none text-dark"> Ajuda </a> </br>
+                  <a href="#" class="text-decoration-none text-black-50"> Centro de Ajuda </a> </br>
+                  <a href="#" class="text-decoration-none text-black-50"> Status do pedido </a> </br>
+                  <a href="#" class="text-decoration-none text-black-50"> Devoluções e garantias </a> </br>
+                  <a href="#" class="text-decoration-none text-black-50"> Contate-nos </a> </br>
+                </div>
+                <div class="col text-center text-md-left">
+                  <a href="#" class="text-decoration-none text-dark"> Sobre </a> </br>
+                  <a href="#" class="text-decoration-none text-black-50"> Sobre nós </a> </br>
+                  <a href="#" class="text-decoration-none text-black-50"> Responsabilidade </a> </br>
+                  <a href="#" class="text-decoration-none text-black-50"> Tecnologia e Renovação </a> </br>
+                  <a href="#" class="text-decoration-none text-black-50"> Conheça nossa história </a> </br>
+                </div>
+              </div>
+            </div>
+          </footer>
+          
+    </body>
+</html>

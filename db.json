@@ -1,0 +1,25 @@
+{
+    "produtos": [
+        {
+            "id":1,
+            "imgScr":"img/Tesoura.jpg",
+            "title":"Tesoura",
+            "text":6.00,
+            "textDesc":"Tesoura sem ponta"
+        },
+        {
+            "id":2,
+            "imgScr":"img/apontador_color.jpg",
+            "title":"Apontador",
+            "text":7.00,
+            "textDesc":"Apontador mini-box"
+        },
+        {
+            "id":3,
+            "imgScr":"img/borrachas_color.jpg",
+            "title":"Borrachas",
+            "text":2.00,
+            "textDesc":"Borrachas coloridas"
+        }
+    ]
+}
